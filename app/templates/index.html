@@ -1,0 +1,112 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!-- banner -->
+<section class="banner_w3lspvt" id="home">
+	<div class="csslider infinity" id="slider1">
+	
+				<div id="#box" class="wrapper">
+						<div class="box11">
+							<div class="conn">
+							<div class="b1">
+									<div class="texty">
+										<h6>Farmers Help</h6>
+										<h1>From Soil to</h1>
+									<h1>Success, Together</h1>
+									<p>Welcome to Farmers Help, your digital agricultural ally! Revolutionizing farming practices, we empower farmers with precision technology to optimize crop growth. From analyzing soil conditions to suggesting the perfect fertilizer, our app ensures every seed sown is a step towards a bountiful harvest.
+									</p>
+									</div>
+									<a href="#ser">
+										<button class="see">See More</button>
+									</a>
+								</div>
+								<div class="b2">
+									<img src="{{ url_for('static', filename='images/cro.png') }}" />
+								</div>
+							</div>
+						</div>
+							
+						</div>
+					
+				</div>
+	</div>
+	
+</section>
+<!-- //banner -->
+
+<!-- core values -->
+<section>
+	<div class="box22">
+
+		<h1> Description</h1>
+		<div class="container ">
+			
+			<div class="content">
+				<div class="col-lg-6 core-left">
+					<img src="{{ url_for('static', filename='images/abc.gif') }}" class="img-fluid" alt="" />
+				</div>
+				<div class="ab">
+					<h2>Join Us In Empowering Agriculture with Data</h2>
+					<p>"Farmers Help" is a pioneering project merging machine learning and agriculture to predict crops and recommend fertilizers. Our team's collaborative efforts have crafted a robust platform analyzing soil quality, weather, crop data, and market trends. The system provides personalized recommendations for optimizing crop yield while minimizing environmental impact. The result is a comprehensive solution empowering farmers with informed decision-making tools. "Farmers Help" aims to revolutionize farming practices, fostering resilience and prosperity in agriculture. Join us in shaping the future of farming with innovative, data-driven solutions.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- //core values -->
+
+<!-- Products & Services -->
+<section class="blog py-5">
+	<div class="container py-md-5" id="ser">
+		<h1> Our Services</h1>
+		<div class="services">
+			<div class="mw">
+				<div class="simg">
+					<img src="{{ url_for('static', filename='images/crop.gif') }}" class="img-fluid" alt="" />
+				</div>
+				
+					<div class="blog-info">
+
+						<h4>Crop</h4>
+
+						<p> Suggests the most suitable crops to be grown based on the prevailing environmental and climatic conditions.</p>
+							<a href="{{ url_for('crop_recommend') }}">
+								<button class="seee">Click Here</button>
+							</a>
+					</div>
+			</div>
+			<div class="mw">
+				 <div class="simg">
+					<img src="{{ url_for('static', filename='images/fert.gif') }}" class="img-fluid" alt="" />
+				 </div>
+		
+					<div class="blog-info">
+						<h4>Fertilizer</h4>
+						<p class="sp">Advises on the ideal fertilizer for a specific soil and recommends a compatible crop for better productivity.</p>
+							<a href="{{ url_for('fertilizer_recommendation') }}">
+								<button class="seee">Click Here</button>
+							</a>
+					</div>
+			</div>
+			
+		</div>
+	</div>
+</section>
+<!-- //Products & Services -->
+
+
+<!-- Creating custom grid and hover effect
+<section>
+<div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+    <div class="hovereffect">
+        <img class="img-responsive" src="images/s2.jpg" alt="">
+        <div class="overlay">
+           <h2>Hover effect 1</h2>
+           <a class="info" href="#">link here</a>
+        </div>
+    </div>
+</div> -->
+
+</html>
+
+{% endblock %}
